@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css" />
+	</head>
+	<body>
+		<div class="detailHeader"></div>
+		<div class="item">
+			<img / width="200px" height="100px">
+			<hr />
+			<div class="itemp">
+				
+			<li><span>姓名：</span><p></p></li>
+			<li><span>性别：</span><p></p></li>
+			<li><span>年级：</span><p></p></li>
+			<li><span>电话：</span><p></p></li>
+			<li ><span>年龄：</span><p></p></li>
+			<li style="display: none;">成绩：</li>
+			<button>查询成绩</button>
+			</div>
+			<div class="canderdetail">
+				
+			</div>
+			<div class="imgcj">
+				
+			</div>
+			
+		</div>
+		<script src="../js/jquery-3.4.1.js"></script>
+		
+		<script>
+			var user = JSON.parse(sessionStorage.stu)
+		
+			
+		</script>
+		<script>
+			
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			let userdetail = Object.values(user.children)
+			var len=userdetail.length;
+			$("img").attr("src",user.children.src);
+			for (var i=0;i<len;i++) {
+					
+			$("body").find("p").eq(i).text(userdetail[i+1])
+				
+			
+			}
+		
+		
+		
+		
+		
+		// $("img").attr("src",user.children.src);
+			// $("p:eq(0)").text(user.children.value[1]);
+		// 	$("p:eq(1)").text(user.children.sex);
+		// 	$("p:eq(2)").text(user.children.grade);
+		// 	$("p:eq(3)").text(user.children.tel)
+		// 	$("p:eq(4)").text(user.children.age)
+		</script>
+		<script>
+			$("button").one("click",function(){
+				$(".itemp li:eq(5)").append("<p></p>").show();
+				$(".itemp li:eq(5) P").text(user.children.score)
+				})
+			
+		
+				
+					
+			
+		</script>
+	</body>
+</html>

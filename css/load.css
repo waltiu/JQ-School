@@ -1,0 +1,87 @@
+*{
+	padding: 0px;
+	/* margin: 0px; */
+	margin-bottom: 0px;
+}
+.loadback{
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	z-index: -1;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	background: url(../img/load/back.png);
+}
+.load{
+	width: 360px;
+	height: 340px;
+	background-color: #F0F8FF;
+	position: absolute;
+	top: 200px;
+	right: 200PX;
+	padding: 20px;
+	border-radius: 20px;
+}
+.load li{
+	list-style: none;
+}
+.load1{
+	    font-size: 2em;
+    line-height: 2em;
+    font-weight: bold;
+    color: #178fe6;
+    border-bottom: 1px solid #d1e9fa;
+	position: relative;
+	top: -15px;
+}
+.load1 p{
+	position: relative;
+	top: 5px;
+	left: 10px;
+}
+.load2{
+	position: relative;
+	top: 13px;
+	margin-bottom: 25px;
+}
+.load2 span{
+	    padding: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px  0px 0px 4px;
+	width: 40px;
+	height: 40px;
+}
+.load2 input{
+	    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+	margin: 0px;
+	height: 40PX;
+	 border: 1px solid #ccc;
+	border-radius: 0PX 4PX 4px 0PX;
+	position: relative;
+	width: 270PX;
+	right:4px ;
+	top: 1.5px;
+	padding: 10px;
+}
+.load button{
+	width: 320px;
+	height: 45PX;
+	text-align: center;
+	margin-top: 10px;
+}
+.error{
+	position: absolute;
+	color: #A52A2A;
+	height: 10px;
+	
+}

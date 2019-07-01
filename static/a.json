@@ -1,0 +1,38 @@
+{
+	"a":
+	[
+		{
+			"username":"165150313",
+			"password":"0313",
+			"children":{
+				"src":"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1988911137,4266060008&fm=27&gp=0.jpg",
+				"name":"金泽楠",
+				"sex":"男",
+				"grade":"大四",
+				"tel":"15922232724",
+				"age":"21",
+				"score":"99"
+				
+				
+				
+				
+		
+						}
+		},
+		{
+			"username":"165150301",
+			"password":"0301",
+			"children":{
+				"src":"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2508649768,1309602683&fm=27&gp=0.jpg",
+				"name":"waltiu",
+				"grade":"大三",
+				"sex":"女",
+				"grade":"大三",
+				"tel":"15822742724",
+				"age":"20",
+				"score":"100"
+				
+						}
+		}
+	]
+}

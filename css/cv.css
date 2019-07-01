@@ -1,0 +1,115 @@
+.out{
+	width: 693px;
+	height: 912px;
+	background-color: #CCCCCC;
+	opacity: 08;
+	position: absolute;
+	margin: 0Px auto;
+	left: 420px;
+	border-radius:20px ;
+	
+}
+.in{
+	width: 670PX;
+	height: 890PX;
+	background-color: #CCCCCC;
+	position: absolute;
+	left: 11PX;
+	top: 9px;
+	
+	
+}
+.right li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+}
+.right{
+	position: absolute;
+	left: 00Px;
+	background-color: cadetblue;
+	top: 2PX;
+	height: 890px;
+}
+.right ul{
+	position:relative;
+	left: -15px;
+	margin-top:10px;
+	
+}
+.right ul>li>p{
+	position: relative;
+	/* left: 60px; */
+	top: -36px;
+	height: 10px;
+	margin-left: 60px;
+}
+
+.style1{
+	border-bottom: 0.125rem solid #670D0D;
+	width: 230PX;
+	color: #687288;
+
+}
+.content li{
+	height: 30px;
+}
+.heaer{
+	position: relative;
+	left: 50px;
+	border:1px solid #FFFFFF;
+	border-radius:50% ;
+	overflow: hidden;
+}
+.left{
+	position: absolute;
+	top: 20px;
+	left: 320px;
+}
+.left>ul{
+	margin-top: 30PX;
+}
+.left>ul>li{
+	width: 400px;
+	position: relative;
+	left: -40px;
+	
+}
+.left>ul>li>p{
+	position: absolute;
+	left: -40px;
+	top: -18px;
+	border-bottom: 2px solid #670D0D;
+	height: 25px;
+	width: 300px;
+	color: cadetblue;
+}
+.left>ul>li>ul>li{
+	width: 150px;
+	height: 25px;
+	
+}
+.left1 li{
+	float: left;
+}
+.left>ul>li>ul>li>p{
+	width: 100px;
+}
+.clear{
+	clear: both;
+}
+.left2 li{
+	color: #0B61A4;
+}
+span{
+	color: red;
+}
+.ping{
+	position: relative;
+	left: 1.25rem; 
+	color: #0B61A4;
+}
+li{
+	list-style: none;
+}

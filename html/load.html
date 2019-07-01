@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/load.css"/>
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body >
+		<div class="loadback">
+			<img src="../img/load/back.png"  width="100%" />
+		</div>
+		<div class="load">
+			<form>
+				<ul>
+					<li class="load1">
+						<img src="../img/load/personal.png" style="float:left;margin:8px 8px 0 0"/>
+						<p>用户登陆</p>
+					</li>
+					<li class="load2">
+						<span class="glyphicon glyphicon-user"></span>
+						<input type="text"  id="username" name="username" placeholder="请输入账号"  >
+					</li>
+					<li class="load2">
+						<span class="glyphicon glyphicon-lock"></span>
+						<input type="password"  id="password" name="password" placeholder="请输入密码" value="" >
+					</li>
+					<li>
+						<p style="padding-top:10PX ;">忘记密码？</p>
+					</li>
+					<li>
+						<button type="button" id="load" class="btn btn-primary login_btn">登&nbsp;&nbsp;&nbsp;录</button>
+					</li>
+					<li>
+						<div class="error">
+							
+						</div>
+					</li>
+				</ul>
+			</form>
+			<script src="../js/jquery-3.4.1.js"></script>
+			<script>
+				
+				
+			
+				$("#load").click(function(){
+						
+					$.get("../static/a.json",{
+						"name":$("#username").val(),
+						"password":$("password").val(),
+					},
+					function(data){
+						const list=data.a;
+						var store;
+						let result=[];
+						var len=list.length;
+						let name=$("#username").val()
+						let password=$("#password").val()
+						var i;
+				
+						for (i=0;i<len;i++) {
+							if (list[i].username==name&&list[i].password==password) {
+								result.push(list[i]);
+								console.log(result[0].children.sex)
+								// console.log(result[0].username)
+							
+								
+								sessionStorage.setItem("stu",JSON.stringify(result[0]));
+								window.location.href="detail.html";
+								localStorage.setItem("stu",result[0]);
+								// console.log(result[0].children)
+								// console.log(sessionStorage.stu.username)
+								// console.log(sessionStorage.stu)
+								
+							
+								
+								
+								break;
+								
+							} else if(name=="waltiu"&&password=="15922232724") {
+								
+								
+								window.location.href="cv.html";
+							
+								
+								
+								
+							}
+								else{
+									 $(".error").text("用户名或密码错误！");
+								}
+							}
+						
+					
+							
+			
+							
+						})
+					})
+					
+				
+			</script>
+		</div>
+	</body>
+</html>
